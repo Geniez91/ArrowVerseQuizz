@@ -1,13 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import App from './Components/App/index';
 import * as serviceWorker from './serviceWorker';
+import Firebase,{firebaseContext} from './Components/Firebase'
 
+///On enveloppe du contexte firebase afin que la class Firebase puisse etre instancier sur tout le site.
 ReactDOM.render(
-  <React.StrictMode>
+<firebaseContext.Provider value={new Firebase()}>
     <App />
-  </React.StrictMode>,
+    </firebaseContext.Provider>
+ ,
   document.getElementById('root')
 );
 

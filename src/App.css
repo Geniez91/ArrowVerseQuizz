@@ -36,3 +36,37 @@
     transform: rotate(360deg);
   }
 }
+.superheros
+{
+  width: 300px;
+}
+.selected
+{
+  background-color: green;
+  font-style: italic;
+  font-weight: bold;
+  
+}
+.options:hover
+{
+  background-color: green;
+}
+.options{
+  border:1px solid;
+  border-color: gray;
+  
+}
+.success{
+  color: green;
+  font-weight: bolder;
+  font-size: large
+}
+.danger
+{
+  color: red;
+  font-weight: bolder;
+  font-size: large
+}
+.marge{
+  margin-bottom: 5px;
+}
